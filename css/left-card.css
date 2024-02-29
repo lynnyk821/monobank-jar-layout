@@ -1,0 +1,95 @@
+.left-card-container {
+    display: flex;
+    flex-direction: column;
+    background: #f3f4f6;
+}
+
+.left-card__header{
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-card__body{
+    width: 100%;
+    height: 85%;
+}
+.jar-container{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jar__bg{
+    height: 215px;
+    width: 215px;
+    position: absolute;
+}
+.jar__glass{
+    height: 200px;
+    width: 150px;
+    position: relative;
+
+}
+
+.jar__info-container{
+    width: 100%;
+    height: 55%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jar__owner, .jar__name{
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+.jar__name{
+    font-size: 22px;
+    font-weight: 900;
+}
+.jar__message{
+    margin-top: 18px;
+}
+
+.jar__stats{
+    width: 305px;
+    height: 65px;
+    margin: 20px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.collected-icon, .target-icon{
+    width: 25px;
+    height: 25px;
+}
+.collected-stats-container, .target-stats-container {
+    height: 70%;
+    width: 50%;
+    gap: 0.7em;
+    margin-left: 0.7em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stats-data__label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #808080;
+}
+
+.collected-stats-container {
+    border-right: solid #ccc 1px;
+}

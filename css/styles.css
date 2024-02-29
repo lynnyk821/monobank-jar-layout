@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100svh;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(136.56deg, #8a53b6 0%, #cea2d0 97.42%) no-repeat;
+    font-family: 'Inter', 'LatoWeb', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards-container {
+    height: 680px;
+    width: 990px;
+    border-radius: 24px;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+}
+
+.left-card-container, .right-card-container {
+    width: 50%;
+    height: 100%;
+    padding: 24px;
+}
