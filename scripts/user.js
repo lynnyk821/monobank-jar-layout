@@ -2,7 +2,7 @@ class User {
     constructor(name, comment, money) {
         this.name = name;
         this.comment = comment;
-        this.money = parseInt(money.replace(" ", ""));
+        this.money = money;
     }
      printUserInformation() {
         console.log(

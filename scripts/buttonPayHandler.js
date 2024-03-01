@@ -8,7 +8,7 @@ const clickButtonPay = (button, userElements) => {
         users.addUser(new User(
             userElements.name.value,
             userElements.comment.value,
-            userElements.money.innerText
+            parseInt(userElements.money.innerText.replace(" ", ""))
         ));
         users.printAllUsersInformation();
     });
