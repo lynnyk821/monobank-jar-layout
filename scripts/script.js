@@ -19,7 +19,7 @@ moneyButtons.forEach(number => {
 payButtons.forEach(button => {
     const payButtonElement = getElementById(button);
 
-    clickButtonPay(payButtonElement, {
+    clickButtonPay(payButtonElement,{
         name:nameInputElement,
         comment:commentInputElement,
         money:moneyInputElement

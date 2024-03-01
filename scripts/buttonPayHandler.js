@@ -1,13 +1,16 @@
-const message = (information) => {
-    console.log(
-        "Name: " + information.name.value + "\n" +
-        "Comment: " + information.comment.value + "\n" +
-        "Money: " + information.money.innerText + "\n"
-    )
-}
-const clickButtonPay = (button, information) => {
+import User from "./user.js";
+import UserList from "./userList.js";
+
+let users = new UserList();
+
+const clickButtonPay = (button, userElements) => {
     button.addEventListener('click',  function (){
-        message(information);
+        users.addUser(new User(
+            userElements.name.value,
+            userElements.comment.value,
+            userElements.money.innerText
+        ));
+        users.printAllUsersInformation();
     });
 }
 export { clickButtonPay }

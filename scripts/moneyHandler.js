@@ -1,5 +1,6 @@
 let money = 0;
 const maxMoney = 29999;
+
 function getCorrectMoneyFormat(money) {
     return money.toLocaleString().replace(",", " ");
 }
