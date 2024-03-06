@@ -1,7 +1,6 @@
+import { getElementById } from "./helpers.js"
 import { moneyInputHandler, moneyButtonHandler } from "./moneyHandler.js";
 import { clickButtonPay } from "./buttonPayHandler.js";
-
-const getElementById = (elementId) => document.getElementById(elementId);
 
 const payButtons = ['monoPay', 'googlePay'],
       moneyButtons = ['100', '500', '1000'];

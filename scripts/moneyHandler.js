@@ -1,28 +1,7 @@
+import { setInnerText, getNumber, setCursorToEnd } from "./helpers.js"
+
 let money = 0;
 const maxMoney = 29999;
-
-function getCorrectMoneyFormat(money) {
-    return money.toLocaleString().replace(",", " ");
-}
-function setInnerText(element, money, maxMoney){
-    element.innerText = (money < maxMoney) ? getCorrectMoneyFormat(money) : getCorrectMoneyFormat(maxMoney);
-}
-function getNumber(inputValue){
-    const number = parseInt(inputValue.replace(/\D/g, ""));
-    return isNaN(number) ? 0 : number;
-}
-function setCursorToEnd(element) {
-    const range = document.createRange();
-    const selection = window.getSelection();
-
-    range.selectNodeContents(element);
-    range.collapse(false);
-
-    selection.removeAllRanges();
-    selection.addRange(range);
-
-    element.focus();
-}
 const moneyInputHandler = (moneyInput) => {
     moneyInput.addEventListener('input', function (){
         money = getNumber(this.innerText);
